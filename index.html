@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security - Ethical Hacker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="iconweb.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Azriel Fajar Wicaksono</div>
+        <div class="links">
+          <a href="index.html">Home</a>
+        </div>
+        <button id="darkModeToggle" class="dark-toggle">🌙</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h1>What Profession Do I Wanna Be?</h1>
+        <p>
+          The IT job that interests me the most is Cyber Security, specifically
+          Ethical Hacking. Ethical hackers are hired by companies to test their
+          systems and find weaknesses before real criminals do. Their daily
+          tasks include scanning networks, running penetration tests, and
+          reporting security risks. I like this role because it feels like your
+          the attacker but using that knowledge to protect people and
+          organizations. The constant changes in technology also mean the work
+          never gets boring.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Evaluation of the Job</h2>
+        <p>
+          This career has many positives. Cyber Security is one of the
+          fastest-growing fields, so job opportunities are strong, and salaries
+          are often high. More importantly, the work has a real impact because
+          it helps protect sensitive information. However, it also comes with
+          challenges. The job can be stressful when dealing with serious
+          security threats, and the skills needed must always stay up to date.
+          Hackers never stop improving, so ethical hackers can’t stop learning
+          either.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Analysis of Skills</h2>
+        <p>
+          To succeed, an ethical hacker needs knowledge of computer networks,
+          operating systems, programming, and security tools. Certifications
+          like CEH or CompTIA Security+ are valuable, and soft skills like
+          communication are just as important because findings (bugs with in the
+          software) must be explained clearly to non-technical people. Right
+          now, I already have some basic programming skills and problem-solving
+          ability, but I need to learn more about networking, Linux, and
+          real-world security practices.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Conclusion</h2>
+        <p>
+          To become an Ethical Hacker, I need both technical and personal
+          growth. I should focus on learning Python, networking fundamentals,
+          and ethical hacking tools, while also practicing how to explain
+          technical ideas as simple as possible.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Action Plan</h2>
+        <p>
+          My step by step plan is, by the end of this semester, I will finish an
+          online Ethical Hacker fundamentals course. Within six months, I will
+          practice using tools like Linux on a virtrual machine. In one year, I
+          aim to be more fluent at Python language. Along the way, I will
+          connect with online communities and professionals for guidance.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Azriel Fajar Wicaksono, FTI UKSW.</p>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        toggleBtn.textContent = "☀️";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "☀️";
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleBtn.textContent = "🌙";
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+  </body>
+</html>
