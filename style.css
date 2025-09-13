@@ -165,6 +165,12 @@ header {
   transition: color 0.4s ease, background 0.4s ease;
 }
 
+.containetr a {
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: color 0.4s ease;
+}
+
 /* Text Styling */
 .container h1,
 .container h2,
